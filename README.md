@@ -3,10 +3,25 @@
 ## React SemanticUI
 
 Semantic UI React provides React components while Semantic UI provides themes as CSS stylesheets. Install the React components and choose a theme that suits your needs.
-
 [https://react.semantic-ui.com/usage/](https://react.semantic-ui.com/usage/)
 
+### Webpack with SemanticUI
+
+Semantic UI React is fully supported by Webpack 2 and 3, including tree shaking as of semantic-ui-react@0.81.2.
+[https://react.semantic-ui.com/usage/](https://react.semantic-ui.com/usage/)
+
+```Please ensure that you build your app in production mode before release. Semantic UI React includes several optimizations in production mode, such as stripping `propTypes` from your build.```
+[For Webpack 2/3 example see here](https://github.com/Semantic-Org/Semantic-UI-React/tree/master/examples/webpack3/config)
+
+#### Installation
+
+`yarn add semantic-ui-react`
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+##### Themes
+
+After building a theme with Gulp, include the minified CSS file in your index.js file:
 
 ## Available Scripts
 
