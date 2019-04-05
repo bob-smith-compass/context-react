@@ -1,3 +1,11 @@
+# Styling
+
+## React SemanticUI
+
+Semantic UI React provides React components while Semantic UI provides themes as CSS stylesheets. Install the React components and choose a theme that suits your needs.
+
+[https://react.semantic-ui.com/usage/](https://react.semantic-ui.com/usage/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
