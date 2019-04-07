@@ -10,7 +10,11 @@ export default class Hello extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
   handleClick() {
-      console.log(this.props); // props undefined unless you bind
+      console.log("props: ", this.props); // props undefined unless you bind
+      console.log("state: ", this.state);
+      this.setState({
+          name: "Sean Shams"
+      })
   }
   render() {
     return (
