@@ -4,6 +4,7 @@ import './App.css';
 import ColorButtons from './components/color-buttons/ColorButtons';
 import ButtonStock from './components/button-stock/ButtonStock';
 import { Segment } from 'semantic-ui-react';
+import Hello from './components/hello/Hello';
 // import Grid from './components/grid/Grid';
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
         <ButtonStock />
         <ColorButtons />
         {/* <Grid /> */}
+        <Hello name="David"/>
       </Segment>
     );
   }

@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 // import * as Redux from 'redux';
+import logger from 'redux-logger';
 import { applyMiddleware, createStore} from 'redux';
 
 
@@ -20,7 +21,8 @@ function mreducer(state=defaultAppState, action) {
     } 
     return state;
 }
-let store = createStore(mreducer, defaultAppState);
+let store = createStore(mreducer, applyMiddleware(logger));
+mreducer(defaultAppState, {type: 'ADD_TITLE'});
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
